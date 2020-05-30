@@ -70,7 +70,7 @@ def user_login(request):
                 return HttpResponseRedirect(reverse('index'))
 
             else:
-                return HttpResponse("ACCOUNT NOT ACTIVE")my
+                return HttpResponse("ACCOUNT NOT ACTIVE")
         else:
             print("Someone tried to login and failed")
             print("Username: {} and password {}".format(username,password))
